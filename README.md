@@ -1,8 +1,8 @@
 # Prunity Audio website
 
 A simplified, editable recreation using the content and logo from https://prunity.lovable.app/.
-Plain HTML and CSS: no installation or build step needed. Open index.html to preview.
-The contact link opens an email app; this site does not include a contact-form backend or audio demo.
+Plain HTML, CSS and JavaScript: no installation or build step needed. Open index.html to preview.
+The contact links open an email app; there is no contact-form backend. The website includes actual before-and-after speech/chewing recordings, with a content warning.
 
 ## Publish on GitHub Pages
 1. Create a new PUBLIC repository named prunity-website under the intended GitHub account or organization. Do not use your private ML/app repository.
@@ -26,7 +26,7 @@ Replace conflicting website records for @ and www, including parking/URL redirec
 
 ## Edit later
 Change text in index.html and colors/layout in styles.css. Commit updates to main; Pages republishes automatically.
-Before publishing, verify the company name, founder biography, and email address. This draft uses Prunity Inc. and farnaz.jazaeri@prunityaudio.com.
+Before publishing, verify the company name, founder biography, and email address. This draft uses Prunity Inc. and farnaz@prunityaudio.com.
 
 ## D-U-N-S and Apple enrollment
 Apple's D-U-N-S request checklist covers your legal entity name, headquarters/mailing address and work contact information. Apple organization enrollment separately requires a publicly available, functional website with meaningful company content and an associated domain. This website does not guarantee approval.
@@ -35,3 +35,6 @@ https://developer.apple.com/programs/enroll/
 
 GitHub setup reference:
 https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+
+
+Updated local preview and performance disclaimers: see `LOCAL-TESTING.md`. The site includes actual WAV comparison files and three real iOS screenshots.
