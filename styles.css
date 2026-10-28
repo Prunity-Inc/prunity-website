@@ -43,3 +43,29 @@
 .footer-top a{overflow-wrap:anywhere}
 @media(max-width:700px){.df-metrics{gap:12px}.df-metrics strong{font-size:clamp(22px,6vw,32px)}.evidence-grid{gap:44px}}
 @media(max-width:360px){.df-metrics{grid-template-columns:1fr 1fr;row-gap:22px}}
+
+/* Privacy Policy */
+.footer-links a{text-underline-offset:4px;font-weight:700}
+.policy-hero{padding-top:86px;padding-bottom:65px;border-bottom:1px solid var(--line)}
+.policy-hero h1{font-size:clamp(48px,6vw,76px);margin-bottom:25px}
+.policy-layout{display:grid;grid-template-columns:235px minmax(0,1fr);gap:75px;padding:65px max(6vw,calc((100vw - 1200px)/2)) 95px}
+.policy-sidebar{align-self:start;position:sticky;top:25px;display:flex;flex-direction:column;gap:12px;font-size:14px}
+.policy-sidebar strong{margin-bottom:12px}.policy-sidebar a{text-decoration:none;color:var(--muted)}
+.policy-sidebar a:hover{text-decoration:underline;color:var(--dark)}
+.policy-content{max-width:780px}.policy-content section{scroll-margin-top:40px;padding:0 0 26px;margin-bottom:34px;border-bottom:1px solid var(--line)}
+.policy-content section:last-child{border:0}.policy-content h2{font-size:clamp(26px,3vw,36px);margin-bottom:18px;letter-spacing:-.035em}
+.policy-content h3{font-size:19px;margin:24px 0 10px}.policy-content p,.policy-content li{font-size:16px;line-height:1.76;color:#405b4b}
+.policy-content ul{padding-left:23px}.policy-content li{margin-bottom:9px}.policy-content a{text-underline-offset:3px;overflow-wrap:anywhere}
+@media(max-width:800px){.policy-layout{grid-template-columns:1fr;gap:35px}.policy-sidebar{position:static;display:none}.policy-hero{padding-top:65px;padding-bottom:45px}}
+
+/* Keep app screenshots compact on desktop and small screens, even if other styles change. */
+#app .screenshots{width:100%;max-width:760px;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+#app .screenshots figure{min-width:0;max-width:240px}
+#app .screenshot-link{display:block;width:100%;max-width:240px}
+#app .screenshot-link img{display:block;width:100%;max-width:240px;height:auto;max-height:520px;object-fit:contain}
+@media(max-width:700px){
+  #app .screenshots{display:flex;max-width:100%;gap:16px;overflow-x:auto}
+  #app .screenshots figure{flex:0 0 min(55vw,215px);max-width:215px}
+  #app .screenshot-link,#app .screenshot-link img{max-width:215px}
+  #app .screenshot-link img{max-height:465px}
+}
