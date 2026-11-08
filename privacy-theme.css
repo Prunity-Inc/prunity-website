@@ -1,0 +1,125 @@
+/* Privacy visual theme — content and wording unchanged. */
+:root{--dark:#302a40;--cream:#faf8fc;--lime:#d8c2e7;--muted:#79748d;--line:#e7e0ed}
+body.privacy-lavender{
+  color:#302a40;
+  background: #faf8fc;
+  font-family:"Helvetica Neue","Avenir Next",Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-weight:400;
+  line-height:1.55;
+}
+.privacy-lavender .header{
+ position:relative;z-index:4;gap:24px;min-height:90px;
+ padding:20px max(6vw,calc((100vw - 1200px)/2));
+ border-bottom:1px solid rgba(134,111,166,.16);
+ background:linear-gradient(105deg,#efebfc 0%,#fbf6fa 48%,#f2ebf9 100%);
+}
+.privacy-lavender .brand-lockup,
+.privacy-lavender .policy-footer-brand{
+  display:inline-flex;align-items:center;gap:10px;
+  text-decoration:none;color:#302a40;line-height:1;white-space:nowrap;
+}
+.privacy-lavender .brand-mark{display:block;flex:0 0 auto;width:34px;height:47px;max-width:none;object-fit:contain}
+.privacy-lavender .brand-type{display:flex;flex-direction:column;align-items:center;gap:6px}
+.privacy-lavender .brand-name{font-size:18px;letter-spacing:.24em;font-weight:590}
+.privacy-lavender .brand-sub{font-size:8px;letter-spacing:.58em;font-weight:590;margin-left:.58em}
+.privacy-lavender .header nav{display:flex;gap:24px;align-items:center}
+.privacy-lavender .header nav a{font-size:13px;color:#494257;text-decoration:none;transition:color .2s}
+.privacy-lavender .header nav a:hover{color:#8165a0;text-decoration:none}
+.privacy-lavender .header-cta{
+  border:0;border-radius:30px;padding:12px 22px;background:#75618e;
+  color:#fff;font-size:13px;font-weight:500;text-decoration:none;white-space:nowrap;
+}
+.privacy-lavender .header-cta:hover{background:#5e4b79}
+.privacy-lavender .policy-hero{
+ position:relative;isolation:isolate;overflow:hidden;
+ padding:96px max(7vw,calc((100vw - 1180px)/2)) 105px;
+ background:radial-gradient(ellipse at 84% 18%,rgba(239,204,229,.66),transparent 44%),
+            radial-gradient(ellipse at 65% 88%,rgba(187,200,255,.57),transparent 48%),
+            radial-gradient(ellipse at 6% 8%,rgba(215,208,255,.63),transparent 48%),
+            linear-gradient(135deg,#f8f5fc,#fff9f6 58%,#eeeafa);
+ border-bottom:1px solid rgba(142,119,176,.13);
+}
+.privacy-lavender .policy-hero::before{
+  content:"";pointer-events:none;position:absolute;inset:0;z-index:-1;opacity:.24;
+  background:repeating-radial-gradient(ellipse at 105% -40%,transparent 0 170px,#fff 173px,transparent 176px)
+}
+.privacy-lavender .policy-hero .eyebrow{
+  color:#927bae;font-size:11px;letter-spacing:.22em;font-weight:650;margin-bottom:23px;
+}
+.privacy-lavender .policy-hero h1{
+  color:#302a40;font-family:inherit;font-size:clamp(50px,6vw,76px);font-weight:350;
+  letter-spacing:-.06em;line-height:1.1;margin-bottom:25px;
+}
+.privacy-lavender .policy-hero h1 em{box-shadow:none;font-style:normal;color:#8d77b0}
+.privacy-lavender .policy-hero .lead{font-size:clamp(19px,2vw,24px);font-weight:350;line-height:1.55;max-width:760px;color:#716b82}
+.privacy-lavender .policy-hero .fine{font-size:12px;letter-spacing:.005em;color:#79748d;margin-top:22px}
+.privacy-lavender .policy-layout{
+  display:grid;grid-template-columns:minmax(190px,230px) minmax(0,1fr);
+  gap:clamp(32px,6vw,85px);max-width:1270px;margin:auto;
+  padding:74px clamp(20px,6vw,88px) 108px;
+}
+.privacy-lavender .policy-sidebar{
+  position:sticky;top:24px;align-self:start;display:flex;flex-direction:column;
+  gap:7px;padding:24px;border:1px solid #e7dff1;border-radius:24px;
+  background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(248,243,255,.72));
+  box-shadow:0 14px 38px rgba(94,69,126,.05);font-size:14px;
+}
+.privacy-lavender .policy-sidebar strong{font-size:14px;color:#302a40;font-weight:600;margin-bottom:14px}
+.privacy-lavender .policy-sidebar a{color:#70677e;padding:5px 8px;margin-left:-8px;border-radius:9px;text-decoration:none}
+.privacy-lavender .policy-sidebar a:hover{background:#eee7f7;color:#5f4c7a}
+.privacy-lavender .policy-content{max-width:810px;min-width:0}
+.privacy-lavender .policy-content section{
+  border-bottom:1px solid #e7e0ed;margin-bottom:33px;padding:0 0 34px;scroll-margin-top:34px;
+}
+.privacy-lavender .policy-content section:last-child{border-bottom:0}
+.privacy-lavender .policy-content h2{
+  color:#302a40;font-family:inherit;font-weight:430;
+  font-size:clamp(26px,3vw,33px);letter-spacing:-.045em;margin:0 0 18px;
+}
+.privacy-lavender .policy-content h3{color:#463a58;font-weight:600;font-size:19px}
+.privacy-lavender .policy-content p,.privacy-lavender .policy-content li{
+  color:#5a5265;font-size:16px;line-height:1.85;
+}
+.privacy-lavender .policy-content strong{color:#383047;font-weight:650}
+.privacy-lavender .policy-content a{color:#745b96;text-decoration-color:#c3add6;text-underline-offset:4px}
+.privacy-lavender .policy-content a:hover{color:#4c376f}
+.privacy-lavender footer{
+  margin:0;padding:44px max(7vw,calc((100vw - 1180px)/2)) 35px;
+  background:#f6f1fa;border-top:1px solid #e9e1f0;color:#655b72;
+}
+.privacy-lavender footer .footer-top{align-items:center;margin:0 0 22px}
+.privacy-lavender footer .footer-top>div{display:flex;align-items:center;gap:16px;min-width:0}
+.privacy-lavender footer .footer-top>div>.policy-footer-brand{display:inline-flex;flex:0 0 auto}
+.privacy-lavender footer .brand-mark{width:31px;height:44px}
+.privacy-lavender footer .brand-name{font-size:16px}.privacy-lavender footer .brand-sub{font-size:7px}
+.privacy-lavender footer .footer-top span{color:#655b72}
+.privacy-lavender footer .footer-top a{color:#655b72;text-decoration:none}
+.privacy-lavender footer .footer-top a:hover,.privacy-lavender footer .footer-links a:hover{color:#745b96}
+.privacy-lavender footer .footer-links a{color:#5f5370;font-weight:500}
+.privacy-lavender footer p{color:#79748d;font-size:13px}
+.privacy-lavender a:focus-visible{outline:3px solid #9076b2;outline-offset:4px}
+@media(max-width:1020px){
+ .privacy-lavender .header{flex-wrap:wrap;row-gap:12px}
+ .privacy-lavender .header nav{gap:15px}
+ .privacy-lavender .policy-layout{gap:30px}
+}
+@media(max-width:760px){
+ .privacy-lavender .header{display:flex;justify-content:space-between;gap:16px;padding:17px 6vw;min-height:80px}
+ .privacy-lavender .brand-mark{width:29px;height:41px}
+ .privacy-lavender .brand-name{font-size:14px}.privacy-lavender .brand-sub{font-size:7px}
+ .privacy-lavender .header nav{order:3;display:flex;flex:1 0 100%;gap:11px;justify-content:space-between;overflow-x:auto}
+ .privacy-lavender .header nav a{white-space:nowrap;font-size:11px}
+ .privacy-lavender .header-cta{margin-left:auto;padding:10px 16px;font-size:12px}
+ .privacy-lavender .policy-hero{padding:70px 7vw 73px}
+ .privacy-lavender .policy-layout{display:block;padding:48px 7vw 76px}
+ .privacy-lavender .policy-sidebar{position:static;display:none}
+ .privacy-lavender .policy-content p,.privacy-lavender .policy-content li{font-size:15px;line-height:1.8}
+ .privacy-lavender footer{padding:36px 7vw 30px}
+ .privacy-lavender footer .footer-top{align-items:flex-start;gap:19px;flex-wrap:wrap}
+ .privacy-lavender footer .footer-top>div{flex-wrap:wrap;gap:12px}
+}
+@media(prefers-reduced-motion:reduce){.privacy-lavender .header nav a{transition:none}}
+
+.privacy-lavender footer .footer-original-brand {display:flex;flex-direction:column;gap:3px;}
+.privacy-lavender footer .footer-original-brand strong {font-size:16px;line-height:1.2;letter-spacing:.11em;text-transform:uppercase;font-weight:590;color:#302a40}
+.privacy-lavender footer .footer-original-brand span {font-size:12px;line-height:1.3}
